@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class Control_Login {
     public Login validarLogin(String nombre, String password) {
         String sql = "SELECT idVendedor, nombreVendedor FROM "
-                + "tabla_vendedor WHERE nombreVendedor = ? "
+                + "table_vendedor WHERE nombreVendedor = ? "
                 + "AND password = ?";
         try (Connection conn = ConexionMySql.getConnection(); PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setString(1, nombre);
