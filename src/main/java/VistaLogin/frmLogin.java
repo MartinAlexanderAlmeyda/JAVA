@@ -22,6 +22,10 @@ public class frmLogin extends javax.swing.JFrame {
      */
     public frmLogin() {
         initComponents();
+        // centra en la pantalla 
+        setLocationRelativeTo(null);  
+        // Opcional: hacer que no se pueda redimensionar 
+        setResizable(false); 
     }
 
     /**
@@ -55,6 +59,7 @@ public class frmLogin extends javax.swing.JFrame {
         pwdContrasena.addActionListener(this::pwdContrasenaActionPerformed);
 
         btnCancelar.setText("Cancelar");
+        btnCancelar.addActionListener(this::btnCancelarActionPerformed);
 
         btnLogin.setText("Login");
         btnLogin.addActionListener(this::btnLoginActionPerformed);
@@ -153,6 +158,10 @@ public class frmLogin extends javax.swing.JFrame {
             txtUsuario.requestFocus();
         }
     }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCancelarActionPerformed
 
     /**
      * @param args the command line arguments

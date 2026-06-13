@@ -28,6 +28,10 @@ private Cliente clienteSeleccionado;
         initComponents();
         
         verClientes();
+        // centra en la pantalla 
+        setLocationRelativeTo(null);
+        // Opcional: hacer que no se pueda redimensionar 
+        setResizable(false);
     }
     // Método para obtener el cliente después de cerrar el diálogo 
 
